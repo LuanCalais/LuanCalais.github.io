@@ -19,49 +19,58 @@
           <a href="#" class="logo">LC</a>
 
           <div class="nav-links">
-            <a href="#sobre">Sobre</a>
-            <a href="#experiencia">Experiência</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#skills">Skills</a>
-            <a href="#contato">Contato</a>
+            <a href="#sobre" data-i18n="nav_about">Sobre</a>
+            <a href="#experiencia" data-i18n="nav_experience">Experiência</a>
+            <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+            <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+            <a href="#contato" data-i18n="nav_contact">Contato</a>
           </div>
 
-          <button
-            class="theme-toggle"
-            id="themeToggle"
-            aria-label="Toggle theme"
-          >
-            <svg
-              class="sun-icon"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
+          <span class="configuration">
+            <div class="language-switcher">
+              <button class="lang-btn active" data-lang="pt-br">PT</button>
+              <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle theme"
             >
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg
-              class="moon-icon"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
+              <svg
+                class="sun-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                class="moon-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+          </span>
 
           <button
             class="mobile-menu-toggle"
@@ -79,19 +88,31 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <span class="hero-greeting">Olá, eu sou</span>
+            <span class="hero-greeting" data-i18n="hero_greeting"
+              >Olá, eu sou</span
+            >
             <h1 class="hero-title">Luan S. Calais</h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-i18n="hero_subtitle">
               Analista Desenvolvedor de Sistemas • Front-end • Mobile
             </p>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero_description">
               Analista Desenvolvedor de Sistemas com 4+ anos de experiência em
               aplicações web e mobile de alta complexidade. Stack principal:
               Angular, React, Vue.js, Node.js e Flutter.
             </p>
             <div class="hero-cta">
-              <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-              <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+              <a
+                href="#projetos"
+                class="btn btn-primary"
+                data-i18n="hero_cta_projects"
+                >Ver Projetos</a
+              >
+              <a
+                href="#contato"
+                class="btn btn-outline"
+                data-i18n="hero_cta_contact"
+                >Entrar em Contato</a
+              >
             </div>
             <div class="hero-social">
               <a
@@ -160,10 +181,10 @@
 
     <section class="section" id="sobre">
       <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
+        <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>
+            <p data-i18n="about_p1">
               Analista Desenvolvedor de Sistemas com
               <strong>4+ anos de experiência</strong> criando aplicações web e
               mobile. Conhecimento sólido em desenvolvimento e integração de
@@ -171,7 +192,7 @@
               (queries, mutations, subscriptions), com domínio em Node.js, Java,
               Angular, React, Vue.js e Flutter.
             </p>
-            <p>
+            <p data-i18n="about_p2">
               <strong>Graduado em Análise e Desenvolvimento de Sistemas</strong
               >, com
               <strong
@@ -182,7 +203,7 @@
               <strong>extensão universitária em Arquitetura de Software</strong
               >.
             </p>
-            <p>
+            <p data-i18n="about_p3">
               Experiência em <strong>consultoria multi-projeto</strong>, atuando
               em plataformas de RH, sistemas de gestão de projetos e
               fiscalização regulatória (ANEEL). Vivência em code reviews, CI/CD
@@ -195,29 +216,39 @@
 
     <section class="section section-alt" id="experiencia">
       <div class="container">
-        <h2 class="section-title">Experiência Profissional</h2>
+        <h2 class="section-title" data-i18n="experience_title">
+          Experiência Profissional
+        </h2>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Analista de Desenvolvimento de Sistemas</h3>
-                <span class="timeline-date">Set 2022 - Nov 2025</span>
+                <h3 data-i18n="experience_item1_title">
+                  Analista de Desenvolvimento de Sistemas
+                </h3>
+                <span
+                  class="timeline-date"
+                  data-i18n="experience_item1_timeline"
+                  >Set 2022 - Nov 2025</span
+                >
               </div>
-              <h4 class="timeline-company">Muralis Tecnologia (Consultoria)</h4>
+              <h4 class="timeline-company" data-i18n="experience_item1_company">
+                Muralis Tecnologia (Consultoria)
+              </h4>
               <ul class="timeline-list">
-                <li>
+                <li data-i18n="experience_item1_l1">
                   Atuação em projetos de consultoria como desenvolvedor
                   fullstack, abrangendo plataformas de RH, gestão de projetos e
                   fiscalização regulatória
                 </li>
-                <li>
+                <li data-i18n="experience_item1_l2">
                   <strong>Plataforma de RH (Vue.js + React Native):</strong>
                   Desenvolvimento de módulos de gestão de pessoas em uma
                   plataforma completa, canais de comunicação, treinamento,
                   workflow e multiplos roles.
                 </li>
-                <li>
+                <li data-i18n="experience_item1_l3">
                   <strong
                     >Sistema de RH Enterprise (React + Java Quarkus):</strong
                   >
@@ -225,7 +256,7 @@
                   APIs REST em Java/Quarkus para gestão de colaboradores e
                   contratos
                 </li>
-                <li>
+                <li data-i18n="experience_item1_l4">
                   <strong
                     >Plataforma de Gestão de Projetos (React + Kotlin):</strong
                   >
@@ -233,7 +264,7 @@
                   e manipulação de dados. Backend em Kotlin com arquitetura
                   escalável
                 </li>
-                <li>
+                <li data-i18n="experience_item1_l5">
                   <strong
                     >Sistema de Fiscalização (Angular + Node.js +
                     Flutter):</strong
@@ -241,7 +272,7 @@
                   Aplicação fullstack com geração de polígonos geoespaciais,
                   mapas interativos, e app Flutter para coleta de dados em campo
                 </li>
-                <li>
+                <li data-i18n="experience_item1_l6">
                   Code reviews, pipelines CI/CD, containerização com Docker, e
                   deploys em ambientes de homologação e produção
                 </li>
@@ -265,27 +296,35 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Desenvolvedor Web (Frontend)</h3>
-                <span class="timeline-date">Nov 2021 - Set 2022</span>
+                <h3 data-i18n="experience_item2_title">
+                  Desenvolvedor Web (Frontend)
+                </h3>
+                <span
+                  class="timeline-date"
+                  data-i18n="experience_item2_timeline"
+                  >Nov 2021 - Set 2022</span
+                >
               </div>
-              <h4 class="timeline-company">Company Conferi</h4>
+              <h4 class="timeline-company" data-i18n="experience_item2_company">
+                Company Conferi
+              </h4>
               <ul class="timeline-list">
-                <li>
+                <li data-i18n="experience_item2_l1">
                   Desenvolvimento frontend de aplicações web para análise e
                   vistoria veicular, incluindo coleta de informações e geração
                   de laudos completos com consultas em tempo real
                 </li>
-                <li>
+                <li data-i18n="experience_item2_l2">
                   Implementação de interfaces responsivas com AngularJS,
                   consumindo APIs REST (backend PHP) para integração de dados
                   veiculares e processamento de vistorias
                 </li>
-                <li>
+                <li data-i18n="experience_item2_l3">
                   Criação de landing pages, melhoria de UX em jornadas de login
                   e prototipação de interfaces com Figma para validação com
                   stakeholders
                 </li>
-                <li>
+                <li data-i18n="experience_item2_l4">
                   Automatização de builds com Gulp, participação em testes,
                   deploys e pipelines de CI para entrega contínua
                 </li>
@@ -306,7 +345,9 @@
 
     <section class="section" id="projetos">
       <div class="container">
-        <h2 class="section-title">Projetos Pessoais em Destaque</h2>
+        <h2 class="section-title" data-i18n="projects_title">
+          Projetos Pessoais em Destaque
+        </h2>
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
@@ -318,10 +359,13 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">
+              <h3 class="project-title" data-i18n="projects_item1_title">
                 TaskSphere - Gestão de Projetos Fullstack
               </h3>
-              <p class="project-description">
+              <p
+                class="project-description"
+                data-i18n="projects_item1_description"
+              >
                 Sistema fullstack de gestão de projetos e tarefas com
                 arquitetura monorepo. Backend em Node.js/TypeScript com GraphQL
                 (Apollo Server) e Prisma ORM, frontend em Angular 21 com Apollo
@@ -370,8 +414,13 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Instant Chat - Real-time Messaging</h3>
-              <p class="project-description">
+              <h3 class="project-title" data-i18n="projects_item2_title">
+                Instant Chat - Chat em Tempo Real
+              </h3>
+              <p
+                class="project-description"
+                data-i18n="projects_item2_description"
+              >
                 Aplicação de chat em tempo real com Socket.IO. Stack MERN
                 (MongoDB, Express, React, Node.js) com autenticação JWT via
                 cookies httpOnly, upload de imagens (Cloudinary), state
@@ -420,8 +469,14 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Chrods & Notes - Music Management</h3>
-              <p class="project-description">
+              <h3 class="project-title" data-i18n="projects_item3_title">
+                Chrods & Notes - Gerenciamento de Músicas e Artistas
+              </h3>
+
+              <p
+                class="project-description"
+                data-i18n="projects_item3_description"
+              >
                 Sistema para gerenciamento de bandas e músicas, desenvolvido com
                 MERN Stack (MongoDB, Express, React, Node.js) com integração de
                 IA via Google Gemini. Features: dashboard analítico com
@@ -471,8 +526,13 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">PetVerse</h3>
-              <p class="project-description">
+              <h3 class="project-title" data-i18n="projects_item4_title">
+                PetVerse - Rede social para donos de pets
+              </h3>
+              <p
+                class="project-description"
+                data-i18n="projects_item4_description"
+              >
                 Sistema fullstack para interação social focado em animais de
                 estimação, desenvolvido com TDD. O frontend utiliza Vue.js, e o
                 backend é construído com Java e Quarkus. Funcionalidades: feed
@@ -535,8 +595,13 @@
               </div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Projeto Owl - Landing Page</h3>
-              <p class="project-description">
+              <h3 class="project-title" data-i18n="projects_item5_title">
+                Projeto Owl - Landing Page
+              </h3>
+              <p
+                class="project-description"
+                data-i18n="projects_item5_description"
+              >
                 Landing page demonstrativa desenvolvida com tecnologias frontend
                 clássicas (2022). AngularJS com validação de formulários
                 reativa, Gulp.js para build automation, SCSS pré-processamento,
@@ -579,7 +644,9 @@
 
     <section class="section section-alt" id="skills">
       <div class="container">
-        <h2 class="section-title">Skills & Tecnologias</h2>
+        <h2 class="section-title" data-i18n="skills_title">
+          Habilidades e Tecnologias
+        </h2>
         <div class="skills-grid">
           <div class="skill-category">
             <div class="skill-category-icon">
@@ -693,10 +760,12 @@
 
     <section class="section" id="contato">
       <div class="container">
-        <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+        <h2 class="section-title" data-i18n="contact_title">
+          Vamos Trabalhar Juntos?
+        </h2>
         <div class="contact-content">
           <div class="contact-text">
-            <p class="contact-description">
+            <p class="contact-description" data-i18n="contact_description">
               Estou sempre aberto a novos projetos e oportunidades. Se você tem
               uma ideia ou precisa de ajuda com desenvolvimento fullstack, web
               ou mobile, vamos conversar!
@@ -744,7 +813,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4>Telefone</h4>
+                  <h4 data-i18n="contact_phone">Telefone</h4>
                   <p>+55 11 91039-6496</p>
                 </div>
               </a>
@@ -767,7 +836,9 @@
                 </div>
                 <div>
                   <h4>LinkedIn</h4>
-                  <p>Conecte-se comigo</p>
+                  <p data-i18n="contact_linkedin_description">
+                    Conecte-se comigo
+                  </p>
                 </div>
               </a>
             </div>
@@ -780,7 +851,11 @@
       <div class="container">
         <div class="footer-content">
           <p>
-            &copy; 2026 Luan S. Calais. Analista Desenvolvedor de Sistemas • SP
+            &copy; 2026 Luan S. Calais.
+            <span data-i18n="footer_content_information"
+              >Analista Desenvolvedor de Sistemas</span
+            >
+            • SP
           </p>
           <div class="footer-links">
             <a href="https://github.com/LuanCalais" target="_blank">GitHub</a>
@@ -795,6 +870,9 @@
       </div>
     </footer>
 
+    <script src="lng/pt-br.js"></script>
+    <script src="lng/en.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
