@@ -5,7 +5,7 @@ const ptBrTranslations = {
   nav_skills: "Habilidades",
   nav_contact: "Contato",
   hero_greeting: "Olá, eu sou",
-  hero_subtitle: "Analista Desenvolvedor de Sistemas • Front-end • Mobile",
+  hero_subtitle: "Analista Desenvolvedor de Sistemas • Fullstack",
   hero_description:
     "Analista Desenvolvedor de Sistemas com 4+ anos de experiência em aplicações web e mobile de alta complexidade. Stack principal: Angular, React, Vue.js, Node.js e Flutter.",
   hero_cta_projects: "Ver Projetos",

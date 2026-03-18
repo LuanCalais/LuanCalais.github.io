@@ -6,7 +6,7 @@ const enTranslations = {
   nav_contact: "Contact",
 
   hero_greeting: "Hello, I'm",
-  hero_subtitle: "Systems Analyst & Developer • Front-end • Mobile",
+  hero_subtitle: "Systems Analyst & Developer • Fullstack",
   hero_description:
     "Systems Analyst & Developer with 4+ years of experience in high-complexity web and mobile applications. Main stack: Angular, React, Vue.js, Node.js, and Flutter.",
   hero_cta_projects: "View Projects",
