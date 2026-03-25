@@ -78,8 +78,12 @@ const enTranslations = {
   projects_item4_description:
     "Fullstack social interaction system focused on pets, developed with TDD. Frontend uses Vue.js, and the backend is built with Java and Quarkus. Features: post feed, pet profiles, friendship system, and integration with PostgreSQL. Unit tests with JUnit and containerized deployment with Docker.",
 
-  projects_item5_title: "Owl Project - Landing Page",
+  projects_item5_title: "MMaker Arena - Meme Battle Platform",
   projects_item5_description:
+    "Meme creation and real-time voting platform. Built with Next.js 14 App Router exploring Server Components, Server Actions and Route Handlers. SQLite database with better-sqlite3, session-based voting system via httpOnly cookies, ISR for cache revalidation and containerized deploy with Docker multi-stage build.",
+
+  projects_item6_title: "Owl Project - Landing Page",
+  projects_item6_description:
     "Demo landing page developed with classic frontend technologies (2022). AngularJS with reactive form validation, Gulp.js for build automation, SCSS preprocessing, asset minification (CSS/JS), and on-scroll animations with ScrollReveal. Educational project demonstrating mastery of task runners and CSS preprocessors.",
 
   skills_title: "Skills & Technologies",
